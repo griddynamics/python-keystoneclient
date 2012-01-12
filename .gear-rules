@@ -1,1 +1,2 @@
+copy: redhat/*patch
 tar.gz: . name=@name@-@version@ base=@name@-@version@
