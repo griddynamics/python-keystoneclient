@@ -1,0 +1,11 @@
+--- python-keystoneclient/keystoneclient/v2_0/users.py.bak	2012-01-04 11:15:37.000000000 +0200
++++ python-keystoneclient/keystoneclient/v2_0/users.py	2012-01-12 17:32:02.000000000 +0200
+@@ -98,6 +98,6 @@
+         """
+ 
+         if not tenant_id:
+-            return self._list("/users", "users")
++            return self._list("/users?limit=10000", "users")
+         else:
+-            return self._list("/tenants/%s/users" % tenant_id, "users")
++            return self._list("/tenants/%s/users?limit=10000" % tenant_id, "users")
