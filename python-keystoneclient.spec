@@ -7,6 +7,7 @@
 Name:             python-keystoneclient
 Version:          2.7
 Release:          1%{?dist}
+Epoch:            1
 Summary:          OpenStack Keystone Client
 
 Group:            Development/Languages
