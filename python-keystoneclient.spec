@@ -15,7 +15,7 @@ License:          Apache 2.0
 Vendor:           Grid Dynamics Consulting Services, Inc.
 URL:              http://www.openstack.org
 Source0:          %{name}-%{version}.tar.gz
-Patch0:           keystoneclient-list-long.patch
+#Patch0:           keystoneclient-list-long.patch
 
 BuildRoot:        %{_tmppath}/%{name}-%{version}
 
@@ -41,7 +41,7 @@ Documentation for %{name}.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p1
+#%patch0 -p1
 
 
 %build
